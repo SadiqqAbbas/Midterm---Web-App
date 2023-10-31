@@ -2,12 +2,11 @@ import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home.component';
-import NewProduct  from './components/NewProduct.component';
+import NewProduct from './components/NewProduct.component';
 import NewShop from './components/NewShop.component';
 
 function App() {
   return (
-   
     <Router>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
@@ -43,7 +42,6 @@ function App() {
         <Route path="/product" element={<NewProduct />} />
         <Route path="/shop" element={<NewShop />} />
       </Routes>
-    
     </Router>
   );
 }
